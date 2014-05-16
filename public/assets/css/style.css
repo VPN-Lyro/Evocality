@@ -1,0 +1,221 @@
+@import url("../foundation/css/foundation.min.css");
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100);
+@import url("../fonts/fontawesome/css/font-awesome.min.css");
+/******************
+ * Evocality CSS
+ * By Cory Mosey
+ * Use for only Evocality
+ * Copyright 2014
+ *
+ * http://www.corymosey.com/
+ ******************/
+/******************
+ * Navigation:
+ *
+ * 1. Imports
+ * 2. Fonts
+ * 3. Mixins
+ * 4. Body
+ * 5. Header
+ ******************/
+/**************************************
+ * 1. Imports
+ *************************************/
+/**************************************
+ * 2. Fonts
+ *************************************/
+/**************************************
+ * 3. Mixins
+ *************************************/
+/**************************************
+ * 4. Body
+ *************************************/
+body {
+  font-family: 'Open Sans', Sans-Serif, Arial;
+  color: #093442;
+  font-size: 12px; }
+
+h1 {
+  font-family: 'Open Sans', Sans-Serif;
+  font-size: 28px;
+  font-weight: 300;
+  color: #093442; }
+
+h2 {
+  font-family: 'Open Sans', Sans-Serif;
+  font-size: 22px;
+  font-weight: 300;
+  color: #093442; }
+
+h3 {
+  font-family: 'Open Sans', Sans-Serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #093442; }
+
+p {
+  font-family: 'Open Sans', Sans-Serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #093442; }
+
+/**************************************
+ * 5. Header & Footer
+ *************************************/
+header {
+  background: #373737; }
+
+footer {
+  background: #373737;
+  padding: 20px 0; }
+
+/**************************************
+ * 5. Navigation
+ *************************************/
+nav {
+  background: url("../images/header/navigation/background.jpg");
+  -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
+  position: relative; }
+  nav ul {
+    margin: 0; }
+    nav ul li {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 12px;
+      color: #FFFFFF;
+      font-weight: 300;
+      position: relative; }
+      nav ul li a {
+        color: #FFFFFF;
+        display: block;
+        padding: 10px 10px; }
+      nav ul li:hover, nav ul li.active {
+        background: #60BCDA; }
+        nav ul li:hover ul.submenu, nav ul li.active ul.submenu {
+          display: block; }
+        nav ul li:hover a, nav ul li.active a {
+          color: #093442; }
+      nav ul li ul.submenu {
+        background: #60BCDA;
+        position: absolute;
+        left: 0;
+        margin: 0;
+        min-width: 200px;
+        display: none; }
+        nav ul li ul.submenu li {
+          display: block; }
+          nav ul li ul.submenu li a {
+            color: #FFFFFF;
+            padding: 5px 10px;
+            border-bottom: 1px solid rgba(225, 225, 225, 0.2); }
+            nav ul li ul.submenu li a:before {
+              font-family: 'fontawesome';
+              content: '\f101';
+              margin: 0 5px 0 0; }
+            nav ul li ul.submenu li a:hover {
+              background: rgba(225, 225, 225, 0.2);
+              color: #FFFFFF; }
+
+/**************************************
+ * 6. Banner
+ *************************************/
+.banner .slides ul {
+  margin: 0; }
+  .banner .slides ul li {
+    list-style: none; }
+    .banner .slides ul li img {
+      width: 100%; }
+.banner .controls ul {
+  margin: 0; }
+  .banner .controls ul li {
+    display: inline-block;
+    vertical-align: top;
+    background: #FFFFFF;
+    width: 12px;
+    height: 12px;
+    list-style: none; }
+
+/**************************************
+ * 7. Info
+ *************************************/
+.info {
+  background: url("../images/header/info/background.jpg");
+  background-attachment: fixed;
+  padding: 30px 0;
+  -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
+  position: relative; }
+
+/**************************************
+ * 8. Boxes
+ *************************************/
+.box.one {
+  background: #FFFFFF;
+  border: 1px solid #2BA6CE;
+  font-weight: 300;
+  font-size: 12px;
+  -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1); }
+  .box.one .box-header {
+    background: #2BA6CE;
+    color: #FFFFFF;
+    padding: 15px; }
+  .box.one .box-content {
+    padding: 15px; }
+.box.two {
+  background: #60BCDA;
+  border: 1px solid #FFFFFF;
+  font-weight: 300;
+  font-size: 12px;
+  -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1); }
+  .box.two .box-header {
+    background: #FFFFFF;
+    color: #2BA6CE;
+    padding: 15px; }
+  .box.two .box-content {
+    padding: 15px; }
+
+/**************************************
+ * 9. Twitter
+ *************************************/
+.twitter {
+  background: #60BCDA;
+  padding: 10px 0 0 0;
+  -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.05); }
+
+/**************************************
+ * 10. Main
+ *************************************/
+.main {
+  padding: 20px 0;
+  -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2; }
+  .main .content h1 {
+    border-bottom: 1px dotted #2BA6CE; }
+  .main .sidebar {
+    background: #EFEFEF;
+    padding: 20px; }
+    .main .sidebar h3 {
+      margin: 0 0 10px 0; }
+    .main .sidebar ul li {
+      font-size: 12px; }
+
+/**************************************
+ * 11. Blog
+ *************************************/
+.blog {
+  background: url("../images/header/navigation/background.jpg");
+  padding: 20px 0;
+  -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
+  position: relative; }
+  .blog h2 {
+    border-bottom: 1px dotted #FFFFFF;
+    color: #FFFFFF;
+    padding: 0 0 5px 0; }
